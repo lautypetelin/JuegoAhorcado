@@ -1,18 +1,41 @@
-## Getting Started
+# Juego del Ahorcado
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este es un juego simple del Ahorcado implementado en Java sin interfaz gráfica de usuario.
 
-## Folder Structure
+## Descripción
 
-The workspace contains two folders by default, where:
+El juego del Ahorcado consiste en adivinar una palabra secreta, letra por letra, antes de que se agoten los intentos.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Instrucciones
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Ejecuta el programa.
+2. Se te mostrará la palabra secreta con guiones bajos representando las letras aún no adivinadas.
+3. Ingresa una letra por teclado y presiona Enter.
+4. Si la letra ingresada está en la palabra secreta, se revelará su posición.
+5. Si la letra no está en la palabra secreta, se contará como un intento fallido.
+6. El juego termina cuando adivines la palabra secreta o se agoten los intentos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Requisitos
 
-## Dependency Management
+- Java Development Kit (JDK) instalado en tu sistema.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Ejecución
+
+1. Abre una terminal o línea de comandos.
+2. Navega hasta la ubicación del archivo `Ahorcado.java`.
+3. Compila el archivo Java ejecutando el siguiente comando:
+    ```bash
+    javac Ahorcado.java
+    ```
+4. Ejecuta el programa compilado con el siguiente comando:
+    ```bash
+    java Ahorcado
+    ```
+
+## Notas adicionales
+
+- La palabra secreta se encuentra codificada en el código fuente (`palabraSecreta = "andresgato"`) y puede ser modificada según se desee.
+- El número máximo de intentos también se puede ajustar cambiando el valor de `intentosMaximos`.
+- El programa utiliza la entrada estándar para que el usuario ingrese las letras.
+
+¡Diviértete jugando al Ahorcado!
